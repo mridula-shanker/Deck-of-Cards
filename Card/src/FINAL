@@ -1,0 +1,75 @@
+/**
+ * 
+ * @author Mridula Shanker
+ *Card Class
+ *Period 6
+ */
+
+public class Card 
+{
+	
+	//feilds
+	private int value; //2-10
+	private char suit; // black or red
+	private char rank; 
+	
+	//constructers
+	
+	 /**
+	 * Constructs a card
+	 * @param v initial value
+	 * @param r intial rank
+	 * @param s intial suit
+	 */
+
+	public Card (int v, char r, char s)
+	{
+		suit = s;
+		value = v;
+		rank = r;
+	}
+	
+	//methods
+	
+	/**
+	 * returns the value of the card
+	 * @return value 	the value of the card
+	 */
+	public int getValue()
+	{
+		return value;
+	}
+	
+	
+	
+	
+	/**
+	 * returns rank of the card
+	 * @return rank 	the rank of the card
+	 */
+	
+	public char getRank()
+	{
+		return rank;
+	}
+	
+	
+	
+	
+	/**
+	 * returns suit of the card
+	 * @return suit 	the suit of the card
+	 */
+	public char getSuit()
+	{
+		return suit;
+	}
+	
+	
+	
+	public String toString() 
+	{
+		return "Value" + value + "Suit" + suit + "Rank" + rank;
+	}
+}
+
